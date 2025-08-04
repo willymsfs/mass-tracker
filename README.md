@@ -1,3 +1,4 @@
 # Mass Tracker
 
-A comprehensive mass tracking system for Catholic priests.
+A comprehensive web application for Catholic priests to track Mass intentions.
+
