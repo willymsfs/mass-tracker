@@ -6,6 +6,7 @@ dotenv.config();
 
 import authRoutes from "./routes/auth";
 import massRoutes from "./routes/mass";
+import reportsRoutes from "./routes/reports";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -15,6 +16,7 @@ app.use(express.json());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/mass", massRoutes);
+app.use("/api/reports", reportsRoutes);
 
 app.get("/", (req, res) => {
   res.send("Mass Tracker API is live!");
@@ -23,4 +25,5 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
 
